@@ -172,25 +172,48 @@ nav {
   display: flex;
   padding-top: 10px;
   width: 100%;
-  justify-content: space-between;
+}
+@media (max-width:500px) {
+  nav {
+    justify-content: center;
+    align-content: center;
+  }
 }
 nav .top {
   display: flex;
-  justify-content: space-between;
   width: 100%;
+}
+@media (max-width:500px) {
+  nav .top {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
 }
 nav h2 {
   display: flex;
-  width: 55%;
-  justify-content: flex-start;
-  padding-left: 10%;
+  width: 80%;
+  margin-left: 10%;
+}
+@media (max-width:500px) {
+  nav h2 {
+    justify-content: center;
+    padding-right: 20px;
+  }
 }
 nav a {
-  width: 90px;
+  width: 20%;
   text-decoration: none;
   color: black;
   font-size: 1.3em;
   justify-content: space-evenly;
+}
+@media (max-width:500px) {
+  nav a {
+    width: 20%;
+    padding-bottom: 10px;
+  }
 }
 .footer {
   width: 100%;
@@ -233,9 +256,21 @@ nav a {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width:500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    order: 1;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width:500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    order: 2;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -266,9 +301,22 @@ nav a {
   justify-content: space-between;
   border-bottom: 2px dashed lightgray;
 }
+@media (max-width:500px) {
+  .home .content-pick {
+    flex-direction: column;
+    width: 100;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width:500px) {
+  .home .content-pick .destination {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+  }
 }
 .home .content-pick .destination button {
   background: #2689aa;
@@ -276,4 +324,10 @@ nav a {
   border-radius: 10px;
   font-size: 1.7rem;
   width: 85%;
+}
+@media (max-width:500px) {
+  .home .content-pick .destination button {
+    margin-bottom: 20px;
+    width: 100%;
+  }
 }
